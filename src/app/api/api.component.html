@@ -1,0 +1,8 @@
+<input type="button" value="Ajouter" (click)="addPost()" />
+<input type="button" value="Editer" (click)="editPost(3)" />
+<input type="button" value="Supprimer" (click)="deletePost(4)" />
+
+
+<ul>
+  <li *ngFor="let post of posts"> {{post.title}}</li>
+</ul>

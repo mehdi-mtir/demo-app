@@ -1,24 +1,4 @@
-<!--1er type de binding : interplolation / expression-->
-<h1>{{title}}</h1>
-<p>{{showMessage()}}</p>
+<!--app-binding></app-binding-->
+<!--app-view-child></app-view-child-->
+<app-api></app-api>
 
-<!--2eme type de binding : property binding-->
-<img [src]="logo" />
-
-<!--3eme type de binding : event binding-->
-<div>
-  <input type="button" value="change image" (click)="changeImage()">
-</div>
-
-<!--4eme type de binding : two way binding-->
-<div>
-<input type="text" [(ngModel)]="title" size="50px" />
-</div>
-
-<!--Directive structurelle NgFor-->
-<ul>
-  <li *ngFor="let j of joursFiltered();"> {{j}}</li>
-</ul>
-
-<!--Directive structurelle -->
-<img [src]="logo" *ngIf="logo == 'assets/angular.png'">
